@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@theme {
+  /* Ink — dark surfaces (landing hero, sidebar) */
+  --color-ink: #14161F;
+  --color-ink-soft: #1E212D;
+  --color-ink-line: #2C303F;
+
+  /* Paper — light app surfaces */
+  --color-paper: #F7F4EC;
+  --color-paper-card: #FFFFFF;
+  --color-paper-line: #E4DECF;
+
+  /* Brass — the seal/stamp accent. Used sparingly, for the thing that matters: money, status, action. */
+  --color-brass: #B8912E;
+  --color-brass-light: #E4C468;
+  --color-brass-dark: #8C6C1F;
+
+  /* Status */
+  --color-accepted: #4B7A5B;
+  --color-accepted-soft: #E7EEE7;
+  --color-rejected: #A4432E;
+  --color-rejected-soft: #F3E7E2;
+  --color-pending: #8C6C1F;
+  --color-pending-soft: #F1E8D2;
+
+  /* Text on ink */
+  --color-cream: #F2EFE6;
+  --color-cream-dim: #A9A79E;
+
+  --font-display: "Fraunces", serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+}
+
+/* Ledger rule — a hairline with a small tick, used as a section divider standing in for the
+   ruled lines of an account book. Not decorative; only appears where it separates dated entries. */
+.ledger-rule {
+  position: relative;
+  border-top: 1px solid var(--color-paper-line);
+}
+.ledger-rule::before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 28px;
+  height: 1px;
+  background: var(--color-brass);
+}
+
+/* Wax-seal stamp used for profile completion + proposal status */
+.seal {
+  font-family: var(--font-mono);
+  letter-spacing: 0.02em;
+}
+
+@keyframes stamp-in {
+  0% { transform: scale(2.2) rotate(-8deg); opacity: 0; }
+  60% { transform: scale(0.92) rotate(-8deg); opacity: 1; }
+  100% { transform: scale(1) rotate(-8deg); opacity: 1; }
+}
+.stamp-animate {
+  animation: stamp-in 0.35s cubic-bezier(0.2, 0.8, 0.3, 1) both;
+}
+
+::selection {
+  background: var(--color-brass-light);
+  color: var(--color-ink);
+}

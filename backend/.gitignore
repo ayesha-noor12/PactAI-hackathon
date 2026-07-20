@@ -1,0 +1,13 @@
+.env
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# Local data — real user/session/proposal data shouldn't be in the repo
+storage/*.json
+storage/profiles/
+storage/sessions/
+pactai.db
+
+.DS_Store

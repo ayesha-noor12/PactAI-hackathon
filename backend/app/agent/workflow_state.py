@@ -1,0 +1,14 @@
+from enum import Enum
+
+
+class WorkflowState(str, Enum):
+
+    DISCOVERY = "DISCOVERY"
+
+    ESTIMATION = "ESTIMATION"
+
+    WAITING_FOR_CLIENT = "WAITING_FOR_CLIENT"
+
+    NEGOTIATION = "NEGOTIATION"
+
+    COMPLETED = "COMPLETED"

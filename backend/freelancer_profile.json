@@ -1,0 +1,39 @@
+{
+    "name": "sara",
+    "title": "AI/ML engineer ",
+    "experience": 2,
+    "skills": [
+        "python",
+        "react",
+        "API"
+    ],
+    "hourly_rate": 15.0,
+    "working_hours_per_day": 15,
+    "minimum_profit_margin": 0.3,
+    "preferred_projects": [
+        "AI / ML",
+        "API / Backend",
+        "Web Application",
+        "Mobile App"
+    ],
+    "currency": "USD",
+    "pricing_mode": "hourly",
+    "platform_price_ranges": {
+        "Web": {
+            "min": 200.0,
+            "max": 1000.0
+        },
+        "Android": {
+            "min": 300.0,
+            "max": 1500.0
+        },
+        "iOS": {
+            "min": 300.0,
+            "max": 1500.0
+        },
+        "Desktop": {
+            "min": 250.0,
+            "max": 1200.0
+        }
+    }
+}
