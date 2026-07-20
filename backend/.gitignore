@@ -4,10 +4,9 @@ __pycache__/
 venv/
 .venv/
 
-# Local data — real user/session/proposal data shouldn't be in the repo
-storage/*.json
-storage/profiles/
-storage/sessions/
+# Local data
+**/storage/*.json
+**/storage/profiles/
+**/storage/sessions/
 pactai.db
-
 .DS_Store
