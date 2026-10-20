@@ -9,9 +9,9 @@ What it does
 
 
 Discovery — the client describes their project conversationally; PactAI extracts project type, platform, features, timeline, and budget.
-Pricing — priced either hourly (hours × rate) or as a fixed range per platform, positioned by project complexity.
-Negotiation — PactAI holds the actual back-and-forth: countering offers with a gradual concession ladder, recalculating honestly if scope or timeline changes mid-conversation, and never revealing the freelancer's floor price.
-Proposal — once a deal is reached, PactAI drafts a full proposal and queues it for the freelancer to Accept or Reject — the AI negotiates, the human decides.
+Pricing priced either hourly (hours × rate) or as a fixed range per platform, positioned by project complexity.
+Negotiation. PactAI holds the actual back-and-forth: countering offers with a gradual concession ladder, recalculating honestly if scope or timeline changes mid-conversation, and never revealing the freelancer's floor price.
+Proposal once a deal is reached, PactAI drafts a full proposal and queues it for the freelancer to Accept or Reject the AI negotiates, the human decides.
 
 
 Tech stack
